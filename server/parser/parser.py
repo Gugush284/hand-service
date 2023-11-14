@@ -13,7 +13,7 @@ def search_results(text, PHONE_RE):
 
 def seven(text, phones):
 
-    PHONE_RE = re.compile(r'\D(\+7\d{9,10})\D')
+    PHONE_RE = re.compile(r'\D(\+7\d{10,10})\D')
 
     result = search_results(text, PHONE_RE)
 
@@ -27,7 +27,7 @@ def seven(text, phones):
     return phones
 
 def eight(text, phones):
-    PHONE_RE = re.compile(r'>(8\d{9,10})\D')
+    PHONE_RE = re.compile(r'>(8\d{10,10})\D')
 
     result = search_results(text, PHONE_RE)
 
@@ -38,7 +38,7 @@ def eight(text, phones):
     return phones
 
 def urban(text, phones):
-    PHONE_RE = re.compile(r'>(\d{6,7})\D')
+    PHONE_RE = re.compile(r'>(\d{7,7})\D')
 
     result = search_results(text, PHONE_RE)
 
